@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SenseiTech Scroll Animation | Codegrid</title>
+    <title>SenseiTech Scroll & Slider</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-    <script type="module" src="script.js"></script>
 
     <section class="intro">
         <h1>The art of selling becomes the art of sensing.</h1>
@@ -19,37 +17,40 @@
             <h1>Time stretches differently inside this frame.</h1>
         </div>
         <div class="spotlight-images">
-            <img src="img/img_1.png" alt="" class="spotlight-img">
-            <img src="img/img_2.png" alt="" class="spotlight-img">
-            <img src="img/img_3.png" alt="" class="spotlight-img">
-            <img src="img/img_4.png" alt="" class="spotlight-img">
+            <img src="img/img_1.png" alt="Spotlight 1" class="spotlight-img">
+            <img src="img/img_2.png" alt="Spotlight 2" class="spotlight-img">
+            <img src="img/img_3.png" alt="Spotlight 3" class="spotlight-img">
+            <img src="img/img_4.png" alt="Spotlight 4" class="spotlight-img">
         </div>
     </section>
+    
+    <div class="slider">
+      
+        <div class="slide-track"></div>
+    </div>
+    
+    
 
-        <div class="slider">
-            <div class="slide-track"></div>
-          </div>
-      
-          <footer>
-            <p>Experiment 0471</p>
-            <p>Built by Codegrid</p>
-          </footer>
-      
-          <script type="module" src="script.js"></script>
-          <div id="modal-overlay">
-              <div class="modal-content">
-                <span class="modal-close">&times;</span>
-                <div class="modal-image-container">
-                  <img id="modal-image" src="" alt="Project Image" />
-                </div>
-                <div class="modal-details">
-                  <h2 id="modal-title"></h2>
-                  <p id="modal-client"></p>
-                  <p id="modal-description"></p>
-                </div>
-              </div>
+    <div id="modal-overlay">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-image-container">
+                <img id="modal-image" src="" alt="Project Image" />
             </div>
-  
+            <div class="modal-details">
+                <h2 id="modal-title"></h2>
+                <p id="modal-client"></p>
+                <p id="modal-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.6/dist/lenis.min.js"></script>
+    
+    <script type="module" src="spotlight-animation.js"></script>
+    <script type="module" src="slider.js"></script>
 
 </body>
 </html>
