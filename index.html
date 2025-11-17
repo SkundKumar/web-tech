@@ -25,11 +25,38 @@
     </section>
     
     <div class="slider">
-      
         <div class="slide-track"></div>
     </div>
-    
-    
+
+    <section class="feedback-section">
+        <div class="feedback-container">
+            <div class="feedback-header">
+                <h2>The Observation Continues</h2>
+                <p>Leave a trace of your presence before you depart.</p>
+            </div>
+            
+            <form class="museo-form" action="#" method="POST">
+                <div class="input-group">
+                    <input type="text" id="name" name="name" placeholder=" " required autocomplete="off">
+                    <label for="name">Visitor ID (Name)</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" id="email" name="email" placeholder=" " required autocomplete="off">
+                    <label for="email">Digital Coordinates (Email)</label>
+                </div>
+
+                <div class="input-group">
+                    <textarea id="message" name="message" placeholder=" " required rows="1"></textarea>
+                    <label for="message">Critique</label>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <span>Archive Entry</span>
+                </button>
+            </form>
+        </div>
+    </section>
 
     <div id="modal-overlay">
         <div class="modal-content">
@@ -51,6 +78,7 @@
     
     <script type="module" src="spotlight-animation.js"></script>
     <script type="module" src="slider.js"></script>
+    <script type="module" src="form.js"></script>
 
 </body>
 </html>
